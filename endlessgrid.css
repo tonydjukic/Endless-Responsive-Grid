@@ -26,6 +26,10 @@
 }
 
 /* GRID ROW SET UP */
+.wrapper {
+	width: 100%;
+	/*max-width: 1240px; */ /* Leave as is for fluid 100% width, or set your preferred maximum site width and uncomment. */
+}
 .gridrow {
   	margin: 0 auto;
 }
