@@ -18,9 +18,11 @@
 .dev{ /*Test grid views */
 	border:1px dotted gainsboro;
 	font-size: 0.9rem;
+	font-family: sans-serif;
 	text-align: center;
 	color: #444;
 	background: #F2F2F2;
+	padding: 0.5rem;
 }
 
 /* GRID ROW SET UP */
@@ -42,15 +44,15 @@
 }
 
 /* MAIN STARTING GRID UNITS */
-.gridunit-100		{width: 100%;	}
-.gridunit-80 		{width: 80%; 	}
-.gridunit-75		{width: 75%;	}
-.gridunit-60		{width: 60%;	}
-.gridunit-50		{width: 50%;	}
-.gridunit-40		{width: 40%;	}
-.gridunit-33		{width: 33.33%;}
-.gridunit-25		{width: 25%;	}
-.gridunit-20		{width: 20%;	}
+.gridunit-100		{width: 100%;		}
+.gridunit-80 		{width: 80%; 		}
+.gridunit-75		{width: 75%;		}
+.gridunit-60		{width: 60%;		}
+.gridunit-50		{width: 50%;		}
+.gridunit-40		{width: 40%;		}
+.gridunit-33		{width: 33.3366%;	}
+.gridunit-25		{width: 25%;		}
+.gridunit-20		{width: 20%;		}
 
 /* ...add more units to the above list as required.  Just remember that a '.gridrow' can hold '.gridunit-x' that total 100%... */
 
