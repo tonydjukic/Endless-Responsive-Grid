@@ -1,0 +1,71 @@
+/*
+* Endless Responsive Grid v 0.1
+* url...
+* Free to use under the Unlicense.
+*
+*/
+
+/* BASE SETTINGS */
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* GRID ROW SET UP */
+.gridrow {
+  	margin: 0 auto;
+}
+.gridrow:after {  /* Clearfix */
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* GRID UNIT SET UP */
+[class*='gridunit-'] {  /* Attribute selector */
+	float: left;
+}
+[class*='gridunit-']:last-of-type {  /* Floats last ".bit-" to the right */
+	float: right;
+}
+
+/* MAIN STARTING GRID UNITS */
+.gridunit-100		{width: 100%;	}
+.gridunit-80 		{width: 80%; 	}
+.gridunit-75		{width: 75%;	}
+.gridunit-60		{width: 60%;	}
+.gridunit-50		{width: 50%;	}
+.gridunit-40		{width: 40%;	}
+.gridunit-25		{width: 25%;	}
+.gridunit-20		{width: 20%;	}
+
+/* ...add more units to the above list as required.  Just remember that a '.gridrow' can hold '.gridunit-x' that total 100%... */
+
+/* RESPONSIVE GRID UNIT RULES */
+/* You can write as many modified rules as you like for additional screen widths and orientations.
+Be mindful, the more complex you make it, the more you may encounter conflicts. */
+@media (max-width: 768px) {
+	.gridunit-80,
+	.gridunit-75,
+	.gridunit-20 {
+		width: 100%;
+	}
+}
+@media (max-width: 600px) {
+	.gridunit-60,
+	.gridunit-50,
+	.gridunit-40,
+	.gridunit-25 {
+		width: 100%;
+	}
+}
+@media (max-width: 568px) { /* iPhone 5 landscape */
+}
+@media (max-width: 480px) { /* iPhone 4 & lower landscape */
+}
+@media (max-width: 320px) { /* iPhones portrait */
+}
