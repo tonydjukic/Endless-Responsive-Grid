@@ -1,5 +1,5 @@
 /*
-* Endless Responsive Grid v 0.2
+* Endless Responsive Grid v 0.3
 * https://github.com/tonydjukic/Endless-Responsive-Grid
 * Free to use under the Unlicense. http://unlicense.org
 *
@@ -49,14 +49,26 @@
 
 /* MAIN STARTING GRID UNITS */
 .gridunit-100		{width: 100%;		}
+.gridunit-95		{width: 95%;		}
+.gridunit-90		{width: 90%;		}
+.gridunit-85		{width: 85%;		}
 .gridunit-80 		{width: 80%; 		}
 .gridunit-75		{width: 75%;		}
+.gridunit-66		{width: 66.6664%;	}
+.gridunit-65		{width: 65%;		}
 .gridunit-60		{width: 60%;		}
+.gridunit-55		{width: 55%;		}
 .gridunit-50		{width: 50%;		}
+.gridunit-45		{width: 45%;		}
 .gridunit-40		{width: 40%;		}
+.gridunit-35		{width: 35%;		}
 .gridunit-33		{width: 33.3336%;	}
+.gridunit-30 		{width: 30%; 		}
 .gridunit-25		{width: 25%;		}
 .gridunit-20		{width: 20%;		}
+.gridunit-15		{width: 15%;		}
+.gridunit-10		{width: 10%;		}
+.gridunit-5		{width: 5%;		}
 
 /* ...add more units to the above list as required.  Just remember that a '.gridrow' can hold '.gridunit-x' that total 100%... */
 
@@ -65,17 +77,30 @@
 Be mindful, the more complex you make it, the more you may encounter conflicts. */
 @media (max-width: 768px) {
 	.gridunit-80,
-	.gridunit-75,
-	.gridunit-20 {
+	.gridunit-75 {
 		width: 100%;
 	}
 }
 @media (max-width: 600px) {
+	.gridunit-95,
+	.gridunit-90,
+	.gridunit-85,
+	.gridunit-70,
+	.gridunit-66,
+	.gridunit-65,
 	.gridunit-60,
+	.gridunit-55,
 	.gridunit-50,
+	.gridunit-45,
 	.gridunit-40,
+	.gridunit-35,
 	.gridunit-33,
-	.gridunit-25 {
+	.gridunit-30,
+	.gridunit-25,
+	.gridunit-20,
+	.gridunit-15,
+	.gridunit-10,
+	.gridunit-5 {
 		width: 100%;
 	}
 }
